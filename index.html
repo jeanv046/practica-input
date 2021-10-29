@@ -7,27 +7,35 @@
     <title>Document</title>
   </head>
   <body bgcolor="black">
-    <h1>Input's</h1>
-    <div class="forcontrol">
-      <input type="text" class="inputid" id="name" placeholder="Nombre" />
-      <label for="name" class="inputlabel">Nombre</label>
+    <div class="card">
+      <h1>Input's</h1>
+        <div class="forcontrol">
+          <input type="text" class="inputid" id="name" placeholder="Nombre" />
+          <label for="name" class="inputlabel">Nombre</label>
+        </div>
+        <br />
+        <div class="container">
+          <input type="text" class="inputStatic" id="name2" />
+          <label for="name2" class="labelStatic">Apellido</label>
+        </div>
+        <br />
+        <button type="button" class="editBoton">Presiona</button>
+        <button type="button" class="editBoton2">Cancelar</button>
     </div>
-    <br>
-    <div class="container">
-        <input type="text" class="inputStatic" id="name2" >
-        <label for="name2" class="labelStatic">Apellido</label>
-    </div>
-    <br>
-    <button  type="button" class="editBoton">Presiona</button>
-    <button  type="button" class="editBoton2">Cancelar</button>
   </body>
 </html>
 
 <style>
-  h1{
+  .card {
+    width: 70%;
+    display: inline-block;
+    justify-content: center;
+    align-items: center;
+  }
+  h1 {
     color: white;
   }
-  .editBoton{
+  .editBoton {
     border: none;
     background-color: rgb(17, 207, 150);
     border-radius: 50px;
@@ -35,12 +43,13 @@
     padding: 0.7rem 2rem;
     color: white;
   }
-  .editBoton:hover, .editBoton:focus{
+  .editBoton:hover,
+  .editBoton:focus {
     border: none;
     background-color: rgb(18, 192, 140);
     border-radius: 50px;
   }
-  .editBoton2{
+  .editBoton2 {
     border: none;
     background-color: rgb(236, 3, 3);
     border-radius: 50px;
@@ -48,30 +57,31 @@
     padding: 0.7rem 2rem;
     color: white;
   }
-  .editBoton2:hover, .editBoton:focus{
+  .editBoton2:hover,
+  .editBoton:focus {
     border: none;
     background-color: rgb(170, 10, 10);
     border-radius: 50px;
   }
-    .container {
-        border: 1px solid red;
-        border-radius: 50px;
-        padding: 1rem 1rem 0.3rem 1rem;
-        position: relative;
-    }
-    .inputStatic{
-        width: 100%;
-        padding:0;
-        border-color: transparent;
-        background-color: transparent;
-        color: white;
-    }
-    .labelStatic {
-        position: absolute;
-        top: 20%;
-        transform: scale(0.8) translateY(-50%) translateX(-10%);
-        color: red;
-    }
+  .container {
+    border: 1px solid red;
+    border-radius: 50px;
+    padding: 1rem 1rem 0.3rem 1rem;
+    position: relative;
+  }
+  .inputStatic {
+    width: 100%;
+    padding: 0;
+    border-color: transparent;
+    background-color: transparent;
+    color: white;
+  }
+  .labelStatic {
+    position: absolute;
+    top: 20%;
+    transform: scale(0.8) translateY(-50%) translateX(-10%);
+    color: red;
+  }
 
   input,
   select,
@@ -98,7 +108,6 @@
     font-size: 18px;
     font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif !important;
     color: rgb(22, 223, 230);
-    
   }
   .forcontrol > .inputid:focus:not(.disabled) ~ .inputlabel,
   .forcontrol > .inputid:not(:placeholder-shown) ~ .inputlabel {
@@ -106,17 +115,16 @@
     transform: scale(0.8) translateY(-100%) translateX(-10%);
     transition: all 0.5s ease-out;
   }
-  .forcontrol> .inputid::placeholder {
+  .forcontrol > .inputid::placeholder {
     color: transparent !important;
   }
-  .forcontrol> .inputid:-ms-input-placeholder {
+  .forcontrol > .inputid:-ms-input-placeholder {
     color: transparent !important;
   } /* IE 10+ */
-  .forcontrol> .inputid::-webkit-input-placeholder {
+  .forcontrol > .inputid::-webkit-input-placeholder {
     color: transparent !important;
   } /* WebKit */
-  .forcontrol> .inputid::-moz-placeholder {
+  .forcontrol > .inputid::-moz-placeholder {
     color: transparent !important;
   } /* Firefox 19+ */
-
 </style>
