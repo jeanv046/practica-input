@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
   </head>
-  <body>
+  <body bgcolor="black">
     <h1>Input's</h1>
     <div class="forcontrol">
       <input type="text" class="inputid" id="name" placeholder="Nombre" />
@@ -24,6 +24,9 @@
 </html>
 
 <style>
+  h1{
+    color: white;
+  }
   .editBoton{
     border: none;
     background-color: rgb(17, 207, 150);
@@ -60,6 +63,8 @@
         width: 100%;
         padding:0;
         border-color: transparent;
+        background-color: transparent;
+        color: white;
     }
     .labelStatic {
         position: absolute;
@@ -83,6 +88,8 @@
     width: 100%;
     padding: 0;
     border-color: transparent;
+    background-color: transparent;
+    color: white;
   }
   .inputlabel {
     position: absolute;
@@ -91,6 +98,7 @@
     font-size: 18px;
     font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif !important;
     color: rgb(22, 223, 230);
+    
   }
   .forcontrol > .inputid:focus:not(.disabled) ~ .inputlabel,
   .forcontrol > .inputid:not(:placeholder-shown) ~ .inputlabel {
