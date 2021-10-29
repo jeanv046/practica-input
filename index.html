@@ -7,6 +7,7 @@
     <title>Document</title>
   </head>
   <body>
+    <h1>Input's</h1>
     <div class="forcontrol">
       <input type="text" class="inputid" id="name" placeholder="Nombre" />
       <label for="name" class="inputlabel">Nombre</label>
@@ -16,10 +17,39 @@
         <input type="text" class="inputStatic" id="name2" >
         <label for="name2" class="labelStatic">Apellido</label>
     </div>
+    <br>
+    <button  type="button" class="editBoton">Presiona</button>
+    <button  type="button" class="editBoton2">Cancelar</button>
   </body>
 </html>
 
 <style>
+  .editBoton{
+    border: none;
+    background-color: rgb(17, 207, 150);
+    border-radius: 50px;
+    cursor: pointer;
+    padding: 0.7rem 2rem;
+    color: white;
+  }
+  .editBoton:hover, .editBoton:focus{
+    border: none;
+    background-color: rgb(18, 192, 140);
+    border-radius: 50px;
+  }
+  .editBoton2{
+    border: none;
+    background-color: rgb(236, 3, 3);
+    border-radius: 50px;
+    cursor: pointer;
+    padding: 0.7rem 2rem;
+    color: white;
+  }
+  .editBoton2:hover, .editBoton:focus{
+    border: none;
+    background-color: rgb(170, 10, 10);
+    border-radius: 50px;
+  }
     .container {
         border: 1px solid red;
         border-radius: 50px;
